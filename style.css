@@ -1,0 +1,257 @@
+/*    User-registration template    */
+
+
+
+
+
+
+/*--------------- Sign up form style -------------------*/
+#signup {}
+.signup-wrap {
+    border-radius: 20px;
+    color: #fff;
+    margin: auto;
+    margin-top: 100px;
+    display: table;
+    overflow: hidden;
+}
+.card {
+    padding: 20px;
+    background-color: #212F3D;
+}
+.card-heading {
+    width: 100%;
+    height: 100%;
+    display: flow-root;
+    text-align: center;
+    align-content: center;
+    align-items: center !important;
+    bottom: 0;
+}
+.card-heading img {
+    width: 90%;
+    height: auto;
+    display: flex;
+}
+/*--- card body ---*/
+
+.card-body {
+    margin-top: 20px;
+}
+.card-body > .heading {
+    font-size: 18px;
+    font-family: cursive;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.s_reg {}
+input {
+    color: #fff;
+}
+.s_reg input {
+    font-size: 14px;
+    font-family: cursive;
+    background: none;
+    outline: none;
+    color: #fff;
+    border: none;    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0;
+}
+.s_reg input:focus, .s_reg select:focus {
+    outline: none;
+    background: none;
+    color: #fff;
+}
+.s_reg input:active {
+    outline: none;
+}
+.s_reg input[type=""] {}
+.s_reg input::placeholder {
+    color: #fff;
+}
+
+ 
+input:focus,
+select:focus,
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=submit]:focus,
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=submit].form-control:focus, 
+[type=tel].form-control:focus,
+select.form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: none;
+  color: #fff;
+}
+
+span.input-group-text {
+    border: none;
+    border-radius: 0;
+    background: none;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+select.form-select {
+    color: #Fff;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0;
+    background: none;
+    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e);
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    appearance: none;
+
+}
+select.form-select option {
+    color: #333;
+}
+
+input.btn {
+    background-color: #5DADE2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+
+    transition: all .2s;
+}
+input.btn:hover {
+    background-color: #3498DB;
+}
+
+
+
+
+/*------------ User profile page -----------*/
+
+#pro_banner {
+    position: relative;
+    max-width: 100%;
+    height: 420px;
+}
+.cover_photo {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/cover-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#profile {
+    position: relative;
+}
+.pro_container {
+    max-width: 960px;
+    border-radius: 20px;
+    background-color: #F8F9F9;
+    box-shadow: 0px 0px 5px 0px #999;
+    margin-top: -150px;
+}
+.profile-abbsoulate {
+    padding: 30px;
+    position: relative;
+}
+.profile_pic {}
+.profile_pic > .figure {
+    width: 280px;
+    height: 280px;
+    padding: 10px;
+    background-color: #3498DB;
+    border-radius: 50%;
+}
+.profile_pic > .figure > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+@media (max-width: 776px) {
+    .profile_pic > .figure {
+        width: 170px;
+        height: 170px;
+    }
+}
+.profile_details {
+    color: #34495E;
+    margin-top: 20px;
+}
+.profile_details h2.name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1C2833;
+    margin: 0;
+    padding: 0;
+}
+.profile_details > .subject {
+    font-size: 12px;
+    font-style: italic;
+    padding: 0;
+    margin-left: 10px;
+}
+.profile_details h4.title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-family: cursive;
+    color: #34495E;
+    margin-top: 20px;
+}
+.profile_details span.q_point {
+    font-size: 14px;
+    font-style: italic;
+}
+.activity {
+    margin-top: 20px;
+}
+.activity > p {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    font-weight: bold;
+    font-size: 14px;
+    color: #34495E;
+}
+.activity > p > a {
+    text-decoration: none;
+    color: #3498DB;
+    font-size: 14px;
+    font-style: italic;
+    margin-right: 10px;
+}
+.descriptio {
+    margin-top: 20px;
+}
+.descriptio > p {
+    text-align: justify;
+    font-size: 14px;
+    color: #34495E;
+}
+.personal_details {}
+.personal_details h4 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 1px solid #999;
+    margin-bottom: 20px;
+}
+.personal_details h6 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+.personal_details h6 > span {
+    font-size: 14px;
+    font-weight: 400;
+}
